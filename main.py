@@ -67,7 +67,7 @@ while True:
     blue = random.randint(1, 255)
     white = 0
 
-    rMESSAGE = convert_byte(message, panel_id, red, green, blue, white, transition_time)
+    message = convert_byte(message, panel_id, red, green, blue, white, transition_time)
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
